@@ -60,6 +60,12 @@ public class BankAccount {
         return balance - withdrawal;
     }
 
+    public static double interest(double balance) {
+        double interest = 0.04 * balance;
+        return balance + interest;
+
+    }
+
 
 
 
