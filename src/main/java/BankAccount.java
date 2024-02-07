@@ -4,13 +4,14 @@ public class BankAccount {
 
     private String firstName;
     private String lastName;
-    private LocalDate datOfBirth;
+    private LocalDate dateOfBirth;
     private int accountNumber;
-    private int balance;
+    private double balance;
 
     public static String getFirstName(String firstName) {
         return firstName;
     }
+
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -24,15 +25,15 @@ public class BankAccount {
         this.lastName = lastName;
     }
 
-    public LocalDate getDatOfBirth(LocalDate 2000, 1, 28) {
-        return datOfBirth;
+    public static int getDateOfBirth(int year, int month, int day) {
+        return year + month + day;
     }
 
-    public void setDatOfBirth(LocalDate datOfBirth) {
-        this.datOfBirth = datOfBirth;
+    public void setDatOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public int getAccountNumber() {
+    public static int getAccountNumber(int accountNumber) {
         return accountNumber;
     }
 
@@ -40,7 +41,7 @@ public class BankAccount {
         this.accountNumber = accountNumber;
     }
 
-    public int getBalance() {
+    public static double getBalance(double balance) {
         return balance;
     }
 
