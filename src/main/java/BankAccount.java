@@ -8,6 +8,10 @@ public class BankAccount {
     private int accountNumber;
     private double balance;
 
+    private double amount;
+
+
+
     public static String getFirstName(String firstName) {
         return firstName;
     }
@@ -45,7 +49,18 @@ public class BankAccount {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    public static double deposit(double balance, double deposit) {
+        return balance + deposit;
+    }
+    public static double withdrawal(double balance, double withdrawal) {
+        return balance - withdrawal;
+    }
+
+
+
+
 }
